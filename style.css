@@ -20,19 +20,50 @@ header{
     grid-column: 2/7;
 }
 
-nav{
-    background-color: aqua;
+.sidebar{
+    background-color: rgb(26, 126, 201);
     grid-row: 1/5;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px 200px;
-    row-gap: 2%;
-    padding: 8px;
+    grid-template-rows: 50px 250px 250px;
+    row-gap: 7%;
+    padding-left: 10px;
+    color: white;
+}
+.sidebar-heading{    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    justify-content: start;
+    gap: 3%;
+    
+  }
+  .sidebar-icon.header {
+    height: 40px;
 }
 
-.nav-child{
-    background-color: coral;
+.sidebar-main-settings{
+
 }
+
+.sidebar-item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: start;
+    gap: 6%;
+}
+
+.sidebar-icon{
+    height: 20px;
+    filter: invert(100%)
+}
+
+nav > div > div {
+    padding-bottom: 7px;
+}
+
 
 main{
 background-color: yellow;
