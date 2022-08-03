@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color:aliceblue;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -124,29 +124,33 @@ nav > div > div {
 
 /* <!-- LEFT SIDE BAR END --> */
 
-main{
-background-color: yellow;
+/* <!-- MAIN CARD SECTION START--> */
+#main-container{
+background-color:aliceblue;
 grid-column: 2/6;
 grid-row: 2/5;
 display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: repeat(auto-fill, 1fr);
-justify-items: center;
-align-items: center;
-
 row-gap: 2%;
-
-
+column-gap: 2%;
+padding: 10px;
 }
 
 .main-card{
-    background-color: red;
+    background-color: white;
+    border-left: 10px solid rgb(94, 3, 3);
+    border: 1px solid;
+    box-shadow: 5px 10px 18px rgb(7, 39, 195);;
     
 }
+.inside-card-wrapper{
+    padding: 30px;
+}
+
+/* <!-- MAIN CARD SECTION END--> */
 
 #rightSection{
-    background-color: blueviolet;
     grid-row: 2/5;
+    border: 3px solid black;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -155,7 +159,7 @@ row-gap: 2%;
 
 }
 .right-section-child{
-background-color: violet;
+
 }
 
 /* CSS */
