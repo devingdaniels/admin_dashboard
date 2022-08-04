@@ -2,16 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 body{
     background-color:aliceblue;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    overflow-x: hidden;
 }
 
 /* <!-- HEADER SECTION START --> */
@@ -129,10 +131,17 @@ nav > div > div {
 background-color:aliceblue;
 grid-column: 2/6;
 grid-row: 2/5;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 40px repeat(3, auto);
 display: grid;
 row-gap: 2%;
 column-gap: 2%;
-padding: 10px;
+margin: 8px;
+
+}
+
+.main-container-title{
+    grid-column: 1/3 ;
 }
 
 .main-card{
@@ -143,22 +152,26 @@ padding: 10px;
     
 }
 .inside-card-wrapper{
-    padding: 30px;
+    padding: 15px;
 }
 
 /* <!-- MAIN CARD SECTION END--> */
 
 #rightSection{
-    grid-row: 2/5;
-    border: 3px solid black;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows:40px auto 40px auto;
+    grid-row: 2/5;
+    row-gap: 2%;
+    column-gap: 2%;
+    padding: 8px;
     
 
-
+    background-color:aliceblue;
 }
 .right-section-child{
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -220,5 +233,13 @@ header-flex-container{
 }
 .welcome-container{
     width: max-content;
+}
+.search-container{
+    width: 200px;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
 }
 }
